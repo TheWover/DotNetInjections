@@ -34,6 +34,9 @@ There are several implications to this. Let me describe two and provide PoC scri
 
 1. We can leverage the environment variables that setup custom Application Domains, 
     https://blogs.msdn.microsoft.com/shawnfa/2005/07/21/setting-up-an-appdomainmanager/
+    
+2. You can copy files here and execute them by adding an appconfig filr to the writable path. This may eveade detection or analysts, since it is still 
+   withing the system path.  xref: [GhostLoader](https://github.com/TheWover/GhostLoader) 
 
 Example:
 tasks.cs or fxstmp.cs  
