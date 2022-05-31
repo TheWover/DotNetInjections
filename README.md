@@ -10,8 +10,8 @@ By locating an arbitrary assembly in C:\Windows\System32\Tasks or C:\Windows\Sys
 
 Other writable folders may include fxstmp
 
-The best candidate for placement, will be a folder below the app you are running, so, system32 may not be writable, but a folder that mateches an
-assembly name you have control over , that is writable will be a good candiate.
+The best candidate for placement, will be a folder below the app you are running, so, system32 may not be writable, but a folder that matches an
+assembly name you have control over , that is , writable will be a good candiate.
 
 For example, cscript, wscript, regsvr32, mshta, eventvwr 
 
@@ -36,7 +36,7 @@ There are several implications to this. Let me describe two and provide PoC scri
     https://blogs.msdn.microsoft.com/shawnfa/2005/07/21/setting-up-an-appdomainmanager/
 
 Example:
-tasks.cs 
+tasks.cs or fxstmp.cs  
 ```
 using System;
 using System.EnterpriseServices;
